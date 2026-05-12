@@ -1,4 +1,4 @@
-import { Syringe, Droplets, Sparkles, ArrowUpCircle, Activity, HeartPulse } from 'lucide-react';
+import { Syringe, Droplets } from 'lucide-react';
 
 export default function Procedures() {
   const procedures = [
@@ -13,26 +13,6 @@ export default function Procedures() {
       description: "Harmonize os traços do rosto com equilíbrio e sofisticação. Protocolos personalizados para: Lábios, Mandíbula, Mento, Malar, Bigode chinês, Linhas de marionete. Resultados que valorizam sua beleza sem exageros.",
       icon: <Droplets className="w-8 h-8 text-wine-light" />,
       video: "/video 3.mp4"
-    },
-    {
-      name: "Bioestimuladores de Colágeno",
-      description: "Estimule naturalmente a produção de colágeno e devolva firmeza, sustentação e qualidade para a pele. Ideal para quem busca rejuvenescimento progressivo e natural.",
-      icon: <Sparkles className="w-8 h-8 text-wine-light" />
-    },
-    {
-      name: "Fios de PDO",
-      description: "Tecnologia moderna para sustentação facial e estímulo de colágeno, promovendo efeito lifting sem cirurgia.",
-      icon: <ArrowUpCircle className="w-8 h-8 text-wine-light" />
-    },
-    {
-      name: "Microagulhamento",
-      description: "Renove a textura da pele, suavize manchas, cicatrizes e poros dilatados através da indução natural de colágeno.",
-      icon: <Activity className="w-8 h-8 text-wine-light" />
-    },
-    {
-      name: "Lipoenzimática de Papada",
-      description: "Defina o contorno facial e reduza o excesso de gordura localizada na região da papada com protocolos seguros e minimamente invasivos.",
-      icon: <HeartPulse className="w-8 h-8 text-wine-light" />
     }
   ];
 
@@ -59,7 +39,7 @@ export default function Procedures() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 group/list align-stretch">
           {procedures.map((proc, index) => (
-            <div key={index} className="flex flex-col bg-stone-800 p-8 hover:bg-stone-700 transition-colors border border-stone-700/50 cursor-pointer">
+            <div key={index} className="flex flex-col bg-stone-800 p-8 border border-stone-700/50">
               <div className="mb-6 bg-stone-900 w-16 h-16 rounded-full flex items-center justify-center border border-stone-700 flex-shrink-0">
                  {proc.icon}
               </div>
